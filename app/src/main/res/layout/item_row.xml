@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    card_view:cardBackgroundColor="#fff5a0"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <CheckBox
+            android:id="@+id/id_row_checkBox"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            ></CheckBox>
+
+        <ImageView
+            android:id="@+id/id_row_categoryImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/id_row_itemName"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:text="itemname"
+            ></TextView>
+
+
+        <!--This button is to fill the spare space-->
+        <!--layout_height="0dp",layout_weight="1"-->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            ></ImageButton>
+
+        <ImageButton
+            android:id="@+id/id_row_details"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            ></ImageButton>
+
+
+        <ImageButton
+            android:id="@+id/id_row_delete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/cardview_dark_background"
+            ></ImageButton>
+
+
+
+        </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
